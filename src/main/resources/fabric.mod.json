@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "ytvc",
+  "version": "${version}",
+  "name": "YouTube Voice Chat Streamer",
+  "description": "サーバーサイド専用: YouTubeの音声をボイスチャットに流すMOD",
+  "authors": ["Satoshi"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ytvc/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "net.azarasi.ytvc.YoutubeVoiceChatMod"
+    ],
+    "voicechat": [
+      "net.azarasi.ytvc.VoicechatPluginImpl"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric": "*",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "voicechat": "*"
+  }
+}
